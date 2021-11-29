@@ -6,7 +6,8 @@
 *********************************************************************/
 #include <stdio.h>
 
-int main() {
+int main()
+{
 	int n, i;
 	float a[30], b[30], sum = 3.5;
 	scanf("%d", &n);
@@ -14,7 +15,8 @@ int main() {
 	a[1] = 3;
 	b[0] = 1;
 	b[1] = 2;
-	for (i = 2; i < n; i++) {
+	for (i = 2; i < n; i++)
+	{
 		a[i] = a[i - 1] + a[i - 2];
 		b[i] = b[i - 1] + b[i - 2];
 		sum += a[i] / b[i];
